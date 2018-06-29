@@ -1,0 +1,228 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project:    Project Name
+Version:    1.0
+Last change:    24/03/17 [fixed Float bug, vf]
+Author Name: Author Name
+Primary use:    Project Type
+-------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. Body
+2.
+-------------------------------------------------------------------*/
+
+/*
+==========================================
+    GOOGLE FONTS CSS
+==========================================
+*/
+
+/**************************************
+    font-family: 'Raleway', sans-serif;
+*/@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700');
+
+/***********************************
+    font-family: 'Lato', sans-serif;
+*/@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
+
+/***********************************
+    font-family: 'Open Sans', sans-serif;
+*/@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+
+
+.p0{ padding:0 !important;}
+.p-t-10{ padding-top:10px !important; }
+.p-t-20{ padding-top:20px !important; }
+.p-t-30{ padding-top:30px !important; }
+.p-t-40{ padding-top:40px !important; }
+.p-t-50{ padding-top:50px !important; }
+.p-t-60{ padding-top:60px !important; }
+.p-t-70{ padding-top:70px !important; }
+.p-t-80{ padding-top:80px !important; }
+
+.p-b-10{ padding-bottom:10px !important; }
+.p-b-20{ padding-bottom:20px !important; }
+.p-b-30{ padding-bottom:30px !important; }
+.p-b-40{ padding-bottom:40px !important; }
+.p-b-50{ padding-bottom:50px !important; }
+.p-b-60{ padding-bottom:60px !important; }
+
+.m0{ margin:0 !important;}
+.m-t-10{ margin-top:10px !important; }
+.m-t-20{ margin-top:20px !important; }
+.m-t-30{ margin-top:30px !important; }
+.m-t-40{ margin-top:40px !important; }
+.m-t-50{ margin-top:50px !important; }
+.m-t-80{ margin-top:80px !important; }
+
+.m-b-10{ margin-bottom:10px !important; }
+.m-b-20{ margin-bottom:20px !important; }
+.m-b-30{ margin-bottom:30px !important; }
+.m-b-40{ margin-bottom:40px !important; }
+.m-b-50{ margin-bottom:50px !important; }
+.m-b-60{ margin-bottom:60px !important; }
+.m-b-70{ margin-bottom:70px !important; }
+.m-b-80{ margin-bottom:80px !important; }
+
+.p-l-10{ padding-left:10px !important;}
+.p-l-20{ padding-left:20px !important;}
+
+.p-r-10{ padding-right:10px !important;}
+.p-r-20{ padding-right:20px !important;}
+
+.spaser-50{ height:50px;}
+.spaser-60{ height:60px;}
+.spaser-70{ height:70px;}
+.spaser-80{ height:80px;}
+.spaser-90{ height:90px;}
+.spaser-100{ height:100px;}
+.spaser-110{ height:110px;}
+.spaser-120{ height:120px;}
+
+/*
+==========================================
+    Reset Css
+==========================================
+*/
+
+html,
+body{
+	width: 100%;
+	height: 100%;
+	font-family: 'Raleway', sans-serif;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+ul li {
+    list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+.section-padding {
+    padding: 90px 0;
+}
+/*
+==========================================
+    HEADER CSS
+==========================================
+*/
+@import url(https://fonts.googleapis.com/css?family=Expletus+Sans:600);
+/*==========SCALE-IN==========*/
+@-webkit-keyframes scale-in {
+     0%   {transform: scale(10, 10); opacity: 0;}
+    100% {transform: scale(1, 1); opacity: 1;}
+}
+
+@keyframes scale-in {
+    0%   {transform: scale(10, 10); opacity: 0;}
+    100% {transform: scale(1, 1);  opacity: 1;}
+}
+/*==========ROLL-OUT==========*/
+@-webkit-keyframes roll-out {
+    0%   {width: 0;}
+    100% {width: 100%; }
+}
+@keyframes roll-out {
+    0%   {width: 0;}
+    100% {width: 100%; }
+}
+body{
+   background: #392f28;
+}
+main{
+  width: 100%;
+  overflow: hidden;
+  font-family: 'Expletus Sans', cursive;
+}
+.hero{
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
+  text-align: center;
+  margin: 0 auto;
+  background: #392f28;
+  position: relative; 
+  color: #392f28;
+}
+
+.hero h1{
+  font-size: 4.1em;
+  margin: auto;
+  position: absolute; 
+  top: 120px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+.hero p{
+  font-size: 1.5em;
+  margin: auto;
+  position: absolute; 
+  top: 220px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+   z-index: 1;
+}
+.hero img{
+  width: 100%;
+}
+.bar{
+  width: 100%;
+  height: 200px;
+  background: -moz-linear-gradient(289deg, #c60a09 0%, #f23332 36%, #c60a09 100%);
+  background: -webkit-linear-gradient(289deg, #c60a09 0%, #f23332 36%, #c60a09 100%);
+  background: -ms-linear-gradient(289deg, #c60a09 0%, #f23332 36%, #c60a09 100%);
+  background: linear-gradient(161deg, #c60a09 0%, #f23332 36%, #c60a09 100%);
+  opacity: 0.3;
+  position: absolute; 
+  z-index: 0;
+  left: 0;
+  top: 90px;
+  -ms-transform-origin: 100% 0%;
+  -webkit-transform-origin: 100% 0%;
+  transform-origin: 100% 0%;
+   -webkit-animation: roll-out 1.2s ease-out ;
+  -moz-animation: roll-out 1.2s ease-out ;
+    animation: roll-out 1.2s ease-out ; 
+}
+.hero h1, .hero p{
+  -webkit-animation: scale-in 1.3s ease-out;
+  -moz-animation: scale-in 1.3s  ease-out;
+    animation: scale-in 1.3s ease-out; 
+}
+
+
+@media all and (max-width: 768px) {
+  .hero{
+    height: 100%;
+  }
+  .bar{
+    height: 26vw;
+    top: 10vw;
+  }
+  .hero h1{
+    font-size: 8vw;
+    top: 13vw;
+  }
+  .hero p{
+    font-size: 3vw;
+    top: 27vw;
+  }
+ 
+}
