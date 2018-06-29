@@ -1,0 +1,26 @@
+@media only screen and (orientation:landscape) {
+body { -webkit-text-size-adjust:none; }
+
+}
+@media screen and (min-width:200px) and (max-width:767px){
+	img, img.scale-with-grid { outline: 0; max-width: 100%; height: auto;}
+	.banner-wr .bound{  right:0px;}
+	.banner-wr .text-right{ text-align:center !important;}
+	.exparince-wr:after{ display:none;}
+	.exparince-wr .expartis-box{ position:relative; padding:46px 0px 44px 0px; z-index:10;}
+    .exparince-wr .expartis-box.right{ padding:46px 0px 44px 0px; }
+	.exparince-wr .text-right{ text-align:left !important;}
+}
+
+
+@media screen and (min-width:768px) and (max-width:1200px){
+	img, img.scale-with-grid { outline: 0; max-width: 100%; height: auto;}
+	.banner-wr .bound{  right:0px;}
+	.banner-wr .text-right{ text-align:center !important;}
+	.exparince-wr .expartis-box{ position:relative; padding:46px 0px 44px 0px; z-index:10;}
+    .exparince-wr .expartis-box.right{ padding:46px 0px 44px 0px; }
+	
+	.team-wr .aria{ padding:0 0px; }
+	.team-wr .box{  padding:10px 10px;}
+}
+
